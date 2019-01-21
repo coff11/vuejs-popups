@@ -1,29 +1,22 @@
 # vue-popups
 
-## Project setup
+## install
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install vue-popups
 ```
 
-### Compiles and minifies for production
+## import
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+import popups from 'vue-popups'
+import '../node_modules/vue-popups/dist/vue-popups.css'
 ```
 
-### Lints and fixes files
+## loading
 ```
-npm run lint
+this.$loading.show()
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+##message
+```
+this.$message.show('This is a message.')
+```
