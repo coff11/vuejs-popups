@@ -16,7 +16,7 @@ import '../node_modules/vue-popups/dist/vue-popups.css'
 this.$loading.show()
 ```
 
-##message
+## message
 ```
-this.$message.show('This is a message.')
+this.$message.show('This is a message.') 
 ```
