@@ -1,13 +1,11 @@
 import Message from './components/Message.vue'
 import Loading from './components/Loading.vue'
-import Modal from './components/Modal.vue'
 
-let $messageVm,
-    $loadingVm,
-    $modalVm
+let $messageVm
+let $loadingVm
 
 export default {
-  install(Vue, options) {
+  install(Vue) {
     if (!$messageVm) {
       const MessagePlugin = Vue.extend(Message)
       $messageVm = new MessagePlugin({
@@ -24,17 +22,8 @@ export default {
       document.body.appendChild($loadingVm.$el)
     }
 
-    if (!$modalVm) {
-      const ModalPlugin = Vue.extend(Modal)
-      $modalVm = new ModalPlugin({
-        el: document.createElement('div')
-      })
-      document.body.appendChild($modalVm.$el)
-    }
-
     $messageVm.show = false
     $loadingVm.show = false
-    $modalVm.show = false
 
     const loading = {
       show() {
@@ -49,18 +38,12 @@ export default {
       show(text) {
         $messageVm.show = true
         $messageVm.text = text
+        setTimeout(() => {
+          this.hide()
+        }, 2000)
       },
       hide() {
         $messageVm.show = false
-      }
-    }
-
-    const modal = {
-      show() {
-        $modalVm.show = true
-      },
-      hide() {
-        $modalVm.show = false
       }
     }
 
@@ -70,15 +53,11 @@ export default {
     if (!Vue.$message) {
       Vue.$message = message
     }
-    if (!Vue.$modal) {
-      Vue.$modal = modal
-    }
 
     Vue.mixin({
       created() {
         this.$loading = Vue.$loading
         this.$message = Vue.$message
-        this.$modal = Vue.$modal
       }
     })
 

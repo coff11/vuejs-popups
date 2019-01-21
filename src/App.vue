@@ -12,16 +12,7 @@ export default {
 
   },
   created() {
-    this.$loading.show()
-    
-      this.$modal.show()
-      this.$message.show()
-    setTimeout(() => {
-      this.$loading.hide()
-    }, 3000);
-    setTimeout(() => {
-      this.$modal.hide()
-    }, 5000);
+
   }
 }
 </script>
