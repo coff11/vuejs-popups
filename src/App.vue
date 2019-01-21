@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+
+  },
+  created() {
+    this.$loading.show()
+    
+      this.$modal.show()
+      this.$message.show()
+    setTimeout(() => {
+      this.$loading.hide()
+    }, 3000);
+    setTimeout(() => {
+      this.$modal.hide()
+    }, 5000);
   }
 }
 </script>
