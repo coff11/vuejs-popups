@@ -13,10 +13,10 @@ import '../node_modules/vue-popups/dist/vue-popups.css'
 
 ## loading
 ```
-this.$loading.show()
+this.$_pop_loading.show()
 ```
 
 ## message
 ```
-this.$message.show('This is a message.') 
+this.$_pop_message.show('This is a message.') 
 ```

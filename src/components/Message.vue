@@ -26,9 +26,9 @@
 <style>
   .message-content {
     font-size: 14px;
-    padding: 8px 14px;
+    padding: 6px 14px;
     white-space:nowrap;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .7);
     color: #eee;
     position: absolute;
     top: 70%;

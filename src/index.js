@@ -35,29 +35,29 @@ export default {
     }
 
     const message = {
-      show(text) {
+      show(text, time) {
         $messageVm.show = true
         $messageVm.text = text
         setTimeout(() => {
           this.hide()
-        }, 2000)
+        }, time?time:2000)
       },
       hide() {
         $messageVm.show = false
       }
     }
 
-    if (!Vue.$loading) {
-      Vue.$loading = loading
+    if (!Vue.$_pop_loading) {
+      Vue.$_pop_loading = loading
     }
-    if (!Vue.$message) {
-      Vue.$message = message
+    if (!Vue.$_pop_message) {
+      Vue.$_pop_message = message
     }
 
     Vue.mixin({
       created() {
-        this.$loading = Vue.$loading
-        this.$message = Vue.$message
+        this.$_pop_loading = Vue.$_pop_loading
+        this.$_pop_message = Vue.$_pop_message
       }
     })
 
