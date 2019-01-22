@@ -7,7 +7,9 @@ npm install vue-popups
 
 ## import
 ```
+import Vue from 'vue'
 import popups from 'vue-popups'
+Vue.use(popups)
 ```
 
 ## loading
