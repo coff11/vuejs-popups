@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    
   </div>
 </template>
 
@@ -18,5 +19,7 @@ export default {
 </script>
 
 <style>
-
+  body {
+    height: 1000px;
+  }
 </style>

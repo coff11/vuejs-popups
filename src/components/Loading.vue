@@ -37,11 +37,18 @@
   }
 </script>
 <style>
+  .loading-box {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   .loading-content {
     width: 100px;
     height: 100px;
     border-radius: 5px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     background: rgba(0, 0, 0, .7);

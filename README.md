@@ -19,5 +19,5 @@ this.$_pop_loading.show()
 
 ## message
 ```
-this.$_pop_message.show('This is a message.') 
+this.$_pop_message.show('This is a message.'[, 3000])
 ```

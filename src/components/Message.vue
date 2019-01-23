@@ -25,18 +25,19 @@
 
 <style>
   .message-content {
-    font-size: 14px;
+    /* font-size: 14px; */
     padding: 6px 14px;
     white-space:nowrap;
     background: rgba(0, 0, 0, .7);
-    color: #eee;
-    position: absolute;
+    color: #fff;
+    position: fixed;
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
     text-align: center;
     line-height: 2;
+    z-index: 9999;
   }
   .fade-enter-active,
   .fade-leave-active {
