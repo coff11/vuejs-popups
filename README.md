@@ -15,6 +15,7 @@ Vue.use(popups)
 ## loading
 ```
 this.$_pop_loading.show()
+this.$_pop_loading.hide()
 ```
 
 ## message
