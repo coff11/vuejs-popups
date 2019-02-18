@@ -1,6 +1,6 @@
 {
   "name": "vue-popups",
-  "version": "0.1.10",
+  "version": "0.1.15",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-popups --dest dist src/index.js",

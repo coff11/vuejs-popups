@@ -40,6 +40,7 @@
   .loading-box {
     width: 100vw;
     height: 100vh;
+    z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
@@ -57,7 +58,7 @@
 
   .fade-enter-active,
   .fade-leave-active {
-    transition: opacity .4s;
+    transition: opacity .3s;
   }
 
   .fade-enter,
